@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Página de login. */
+
+
+body {
+    max-width: 100%;
+    position: relative;
+    font-family: 'Roboto', 'sans-serif';
+}
+a {
+    color: #eee !important;
+    text-decoration: none;
+    
+}
+.nav-footer ul li {
+    list-style-type: none;
+}
+header nav {
+   background-color: #282A36;
+}
+span {
+    /* color: #ff14c4; */
+}
+
+.grid-img {
+    margin-top: 10px;
+    gap: 4px;
+    height: 650px;
+    display: grid;
+    grid-template-areas: 
+        "item-1 item-1 item-1 item-1 item-2 item-2"
+        "item-1 item-1 item-1 item-1 item-2 item-2"
+        "item-3 item-3 item-3 item-3 item-2 item-2"
+        "item-3 item-3 item-3 item-3 item-2 item-2"
+        ;
+}
+
+.item-1 {    
+    grid-area: item-1;
+    background: url("../images/cadeira-gamer-com-luzes-neon-multicoloridas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-2 {
+    grid-area: item-2;
+    background: url("../images/jogador-de-tiro-medio-sentado-na-cadeira.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-3 {
+    grid-area: item-3;
+    background: url("../images/d.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav-footer {
+    display: grid;
+    height: 10rem;
+    margin-top: 10px;
+    background-color: #9B0074;
+    grid-template-areas: 
+        "link-footer-1 link-footer-2 link-footer-3"    
+    ;
+}
+.link-footer-1 {
+    grid-area: link-footer-1;    
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.link-footer-2 {
+    grid-area: link-footer-2;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.link-footer-3 {
+    grid-area: link-footer-3;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.footer {
+    height: 70px;
+    background-color: #151515;
+    bottom: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+}
+.footer p {
+    
+    color: aliceblue;
+   
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: #151515;
+}
+::-webkit-scrollbar-thumb {
+    background: #621555;   
+    border-radius: 5px;
+}
